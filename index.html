@@ -162,7 +162,55 @@ About this website</h2>
   </div>
 
   <!-- ------ Script Section------- -->
-  	
+<!--cpm1 v2.0-->
+<div class="section">
+    	<h3 class="side-heading">CPM 1 v4.9.2, script v2.0:</h3>
+    <img src="https://i.postimg.cc/nz6V6h1Y/cpmv2-1.jpg" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;">
+    <img src="https://i.postimg.cc/1Rwy8PH2/cpmv2-2.jpg" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;"><br>	
+   	 <h3 class="side-feature">Script password: 333999</h3>
+    	<h3 class="side-feature">Features:</h3>
+    	<h3 class="side-points">&#8226; Cash Menu</h3>
+    	<h3 class="side-points">&#8226; 500K Coins</h3>
+    	<h3 class="side-points">&#8226; UFO Menu</h3>
+        <h3 class="side-points">&#8226; HP Menu</h3>
+        <h3 class="side-points">&#8226; Shift Time Menu</h3>
+        <h3 class="side-points">&#8226; Glitch Car Menu</h3>
+        <h3 class="side-points">&#8226; Unlock Premium Cars Menu</h3>
+	<h3 class="side-points">&#8226; Race Menu</h3>
+	<h3 class="side-points">&#8226; Chrome Menu</h3>
+	<h3 class="side-points">&#8226; Steering Angle Menu</h3>
+        <h3 class="file-size">File size: 138KB</h3>
+    <button onclick="downloadScript3()" style="
+  background-color: #444;      
+  color: #fff;                  
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+">
+  Download this script 
+</button>
+
+<script>
+function downloadScript3() {
+  fetch('https://cdn.jsdelivr.net/gh/cpmmallu-ux/host-lua-files@cb1dd08d8dd859afe3e8297f563f2bb1a9f345c0/MALLU_CPM_SCRIPT_MENU_v2.0.lua')
+    .then(response => response.blob())
+    .then(blob => {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'MALLU_CPM_SCRIPT_MENU_v2.0.lua';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    })
+    .catch(error => alert("Download failed"));
+}
+</script>
+</div>	
+	
   <!-- cpm v1 -->
     <div class="section">
     	<h2 style="text-decoration: underline; text-decoration-color: #ffffff; text-align: center;">
@@ -177,7 +225,7 @@ My scripts</h2><br>
         <h3 class="side-points">&#8226; HP Menu</h3>
         <h3 class="side-points">&#8226; Shift Time Menu</h3>
         <h3 class="side-points">&#8226; Glitch Car Menu</h3>
-        <h3 class="side-points">&#8226; Unlock Premium cars menu</h3>
+        <h3 class="side-points">&#8226; Unlock Premium Cars Menu</h3>
         <h3 class="file-size">File size: 44KB</h3>
     <button onclick="downloadScript1()" style="
   background-color: #444;      
