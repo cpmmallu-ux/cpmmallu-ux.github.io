@@ -169,6 +169,21 @@
   stroke-dashoffset: 163.36;
 }
 
+.glow-btn {
+  background: transparent;
+  color: #00ffcc;
+  padding: 12px 28px;
+  border: 2px solid #00ffcc;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+}	  
+
   </style>
 </head>
 <body>  
@@ -268,6 +283,7 @@ function downloadScript7() {
 
 	
 <!-- cpm v3.0.1-->
+<div id="moreScripts" style="display: none;">	
 <div class="section">
     	<h3 class="side-heading">CPM 1 v4.9.3, script v3.0.1:</h3>
     <img src="https://i.postimg.cc/4dNPV744/CPM-v3-0.webp" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;"><br>	
@@ -583,8 +599,34 @@ function downloadScript2() {
 }
 </script>
   </div>
+</div>
+
+
+
+<div class="section">
+  <button id="showMoreBtn" onclick="toggleScripts()" class="glow-btn">
+    SHOW MORE SCRIPTS
+  </button>
+</div>
+
+<script>
+function toggleScripts() {
+  var moreScripts = document.getElementById("moreScripts");
+  var btn = document.getElementById("showMoreBtn");
+
+  if (moreScripts.style.display === "none" || moreScripts.style.display === "") {
+    moreScripts.style.display = "block";
+    btn.textContent = "SHOW LESS SCRIPTS";
+    moreScripts.scrollIntoView({ behavior: "smooth" });
+  } else {
+    moreScripts.style.display = "none";
+    btn.textContent = "Show More Scripts";
+  }
+}
+</script>
+	
   
-  
+<!--Tools section -->
 <div class="section">
     <h2 style="text-decoration: underline; text-decoration-color: #ffffff; text-align: center;">My Tools</h2>
         <a href="https://safeimgconverter.github.io/" target="_blank" class="btn">Image Converter</a>
@@ -657,6 +699,7 @@ Note: The name <strong>CPM MALLU</strong> has no relation to any political party
 
 </body>
 </html>
+
 
 
 
