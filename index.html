@@ -222,10 +222,71 @@ About this website</h2>
   </div>
 
   <!-- ------ Script Section------- -->
-	<!--Cpm v4.0-->
+	<!--cpm v4.0.1-->
 	<div class="section">
 <h2 style="text-decoration: underline; text-decoration-color: #ffffff; text-align: center;">
 My scripts</h2><br>
+    	<h3 class="side-heading">CPM 1 v4.9.4, script v4.0.1:</h3>
+    <img src="https://i.postimg.cc/rm1P5PK9/20250917-220410.jpg" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;"><br>	
+   	 <h3 class="side-feature">No password</h3>
+    	<h3 class="side-feature">Features:</h3>
+    	<h3 class="side-points">&#8226; Money Menu</h3>
+    	<h3 class="side-points">&#8226; Coin Menu</h3>
+    	<h3 class="side-points">&#8226; UFO Menu</h3>
+        <h3 class="side-points">&#8226; HP Menu</h3>
+        <h3 class="side-points">&#8226; Glitch Car Menu</h3>
+	    <h3 class="side-points">&#8226; Race Menu</h3>
+	    <h3 class="side-points">&#8226; Chrome Menu</h3>
+	    <h3 class="side-points">&#8226; Steering Angle Menu</h3>
+	    <h3 class="side-points">&#8226; Bypass Menu</h3>
+	    <h3 class="side-points">&#8226; Spoiler Menu</h3>
+		<h3 class="side-points">&#8226; Fast Runner Menu</h3>
+		<h3 class="side-points">&#8226; Shift Time Menu</h3>
+		<h3 class="side-points">&#8226; Premium Body Kit Menu</h3>
+		<h3 class="side-points">&#8226; Remove Bumper Menu</h3>
+		<h3 class="side-points">&#8226; Roof Menu</h3>
+		<h3 class="side-points">&#8226; Unlock Premium Cars Menu</h3>
+		<h3 class="side-points">&#8226; Unlock Menu</h3><br>
+    <button onclick="downloadScript9()" style="
+  background-color: #444;      
+  color: #fff;                  
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+">
+  <span style="display: inline-flex; align-items: center; gap: 5px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+      <path d="M12 16l-6-6h4V2h4v8h4l-6 6zm-8 4h16v2H4v-2z"/>
+    </svg>
+    Download script
+  </span>
+</button>
+
+<script>
+function downloadScript9() {
+  fetch('https://cdn.jsdelivr.net/gh/cpmmallu-ux/host-lua-files@0bdc481454a624b713a3173891ffa0963e48e633/%23Enc_MALLU_CPM_SCRIPT_MENU_v4.0.1.lua')
+    .then(response => response.blob())
+    .then(blob => {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'MALLU_CPM_SCRIPT_MENU_v4.0.1.lua';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    })
+    .catch(error => alert("Download failed"));
+}
+</script>
+</div>		
+	
+	<!--Cpm v4.0-->
+	<div id="moreScripts" style="display: none;">
+	<div class="section">
     	<h3 class="side-heading">CPM 1 v4.9.4, script v4.0:</h3>
     <img src="https://i.postimg.cc/bvrCxNrc/1000065809.webp" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;"><br>	
    	 <h3 class="side-feature">No password</h3>
@@ -284,7 +345,6 @@ function downloadScript8() {
 
 	
 <!-- cpm v3.0.2-->
-<div id="moreScripts" style="display: none;">
 <div class="section">
     	<h3 class="side-heading">CPM 1 v4.9.3, script v3.0.2:</h3>
     <img src="https://i.postimg.cc/4dNPV744/CPM-v3-0.webp" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;"><br>	
@@ -758,6 +818,7 @@ Note: The name <strong>CPM MALLU</strong> has no relation to any political party
 
 </body>
 </html>
+
 
 
 
