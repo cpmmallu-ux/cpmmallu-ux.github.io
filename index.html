@@ -270,11 +270,8 @@ My scripts</h2><br>
 </button>
 
 <script>
-async function downloadScript12() {
- const counterURL = "https://cpmmallu-track.ct.ws/counter.php?action=add&script=cpm_v4.9.4__v4.0.9";
-	const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(counterURL);
-  await fetch(proxy).catch(e => console.warn('proxy counter failed', e));
-	
+ function downloadScript12() {
+ fetch('https://cpmmallu-track.ct.ws/counter.php?action=add&script=cpm_v4.9.4__v4.0.9');
   fetch('https://cdn.jsdelivr.net/gh/cpmmallu-ux/host-lua-files@79e7b17d0448c66c26ee1c5f27fec29c309c50a5/%23Enc_MALLU_CPM_SCRIPT_MENU_v4.0.9.lua')
     .then(response => response.blob())
     .then(blob => {
@@ -606,6 +603,7 @@ Note: The name <strong>CPM MALLU</strong> has no relation to any political party
 
 </body>
 </html>
+
 
 
 
