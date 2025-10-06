@@ -271,11 +271,7 @@ My scripts</h2><br>
 
 <script>
  function downloadScript12() {	 
- //const ifr = document.createElement('iframe');
-//ifr.src = 'https://cpmmallu-track.ct.ws/counter.php?action=add&script=cpm_v4.9.4__v4.0.9';
-//ifr.style.width = '0'; ifr.style.height = '0'; ifr.style.border = '0'; ifr.style.display = 'none';
-//ifr.onload = () => setTimeout(() => ifr.remove(), 500);
-//document.body.appendChild(ifr);
+ new Image().src = 'https://cors-proxy-cpmmallu.afinuk123.workers.dev?action=add&script=cpm_v4.9.4__v4.0.9&t=' + Date.now();
 
   fetch('https://cdn.jsdelivr.net/gh/cpmmallu-ux/host-lua-files@79e7b17d0448c66c26ee1c5f27fec29c309c50a5/%23Enc_MALLU_CPM_SCRIPT_MENU_v4.0.9.lua')
     .then(response => response.blob())
@@ -608,6 +604,7 @@ Note: The name <strong>CPM MALLU</strong> has no relation to any political party
 
 </body>
 </html>
+
 
 
 
