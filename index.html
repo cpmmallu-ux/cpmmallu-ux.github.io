@@ -303,7 +303,7 @@ About this website</h2>
 	<div class="section">
 <h2 style="text-decoration: underline; text-decoration-color: #ffffff; text-align: center;">
 My scripts</h2><br>
-<h3 class="side-heading">CPM 1 v4.9.6, script v5.1:</h3>
+<h3 class="side-heading">CPM 1 v4.9.6, script v5.1.1:</h3>
     <img src="https://i.postimg.cc/XvN9XnfM/cpm-v5-0-2.jpg" alt="Script Image"  style="width: 230px; height: auto; border-radius: 10px;"><br>	
 		<h3 class="side-feature">No password</h3>
     	<h3 class="side-feature">Features:</h3>
@@ -345,12 +345,12 @@ My scripts</h2><br>
 
 <script>
 function downloadScript14() {
-  fetch('https://cdn.jsdelivr.net/gh/cpmmallu-ux/host-lua-files@c08f989a522ab3aef53a278f1bfdc947e35ad0d7/%23Enc_MALLU_CPM_SCRIPT_MENU_v5.1.lua')
+  fetch('https://cdn.jsdelivr.net/gh/cpmmallu-ux/host-lua-files@96ab3ee451f987fc29c2094b76b989abf05f31e7/%23Enc_MALLU_CPM_SCRIPT_MENU_v5.1.1.lua')
     .then(response => response.blob())
     .then(blob => {
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
-      link.download = 'MALLU_CPM_SCRIPT_MENU_v5.1.lua';
+      link.download = 'MALLU_CPM_SCRIPT_MENU_v5.1.1.lua';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -789,6 +789,7 @@ Note: The name <strong>CPM MALLU</strong> has no relation to any political party
 
 </body>
 </html>
+
 
 
 
