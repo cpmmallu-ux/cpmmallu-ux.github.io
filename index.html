@@ -241,28 +241,47 @@
 </head>
 <body>  
 
-<!-- King Screen -->
-<div id="kingScreen" class="king-screen">
+<div id="malluScreen" class="king-screen">
   <div class="king-box">
-    <img src="https://i.postimg.cc/FRMtdH7T/exit-button.png" alt="Close" class="close-btn" onclick="closeKing()">
-    <div class="king-title">BE A KING IN CPM</div>
-      <div class="king-text">
-        Introducing <b>CPM MALLU’s King Rank System</b> —  
-        earn your place among elite players, boost your account status,  
-        and flex your exclusive rank in the world of Car Parking Multiplayer!
-      </div>
-      <a href="" target="_blank" class="btn"></a>
+    <div class="king-title">Subscribe to access!</div>
+
+    <div class="king-text">
+      Subscribe to <b>CPM MALLU</b> on YouTube.<br>
+      After subscribing, return here to access this website.
     </div>
+
+    <a href="https://youtube.com/@cpmmallu-scripts"
+       target="_blank"
+       class="btn"
+       onclick="markVisited()">SUBSCRIBE</a>
   </div>
+</div>
+
 
 <script>
-	/*setTimeout(() => {
-  document.getElementById("kingScreen").style.display = "flex";
-}, 700);*/
-
-  function closeKing() {
-    document.getElementById("kingScreen").style.display = "none";
+setTimeout(() => {
+  if (!localStorage.getItem("cpm_mallu_unlock_done")) {
+    document.getElementById("malluScreen").style.display = "flex";
   }
+}, 700);
+
+function markVisited() {
+  localStorage.setItem("cpm_mallu_clicked", "1");
+}
+
+window.addEventListener("focus", () => {
+  if (localStorage.getItem("cpm_mallu_clicked") === "1" &&
+      !localStorage.getItem("cpm_mallu_unlock_done")) {
+
+    document.querySelector(".king-text").innerHTML =
+      "<b>Checking access…</b><br>Please wait…";
+
+    setTimeout(() => {
+      document.getElementById("malluScreen").style.display = "none";
+      localStorage.setItem("cpm_mallu_unlock_done", "1");
+    }, 5000);
+  }
+});
 </script>
 	
 
@@ -789,6 +808,7 @@ Note: The name <strong>CPM MALLU</strong> has no relation to any political party
 
 </body>
 </html>
+
 
 
 
